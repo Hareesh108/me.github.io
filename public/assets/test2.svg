@@ -1,0 +1,24 @@
+<svg width="100%" height="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color: #f0c800; stop-opacity: 1" />
+            <stop offset="100%" style="stop-color: #ffdd57; stop-opacity: 1" />
+        </radialGradient>
+    </defs>
+    <g fill="url(#gradient)">
+        <circle cx="100" cy="100" r="80" />
+        <circle cx="100" cy="100" r="70" />
+        <circle cx="100" cy="100" r="60" />
+        <circle cx="100" cy="100" r="50" />
+    </g>
+    <g stroke="#ffcc00" stroke-width="2">
+        <line x1="100" y1="0" x2="100" y2="30" />
+        <line x1="100" y1="200" x2="100" y2="170" />
+        <line x1="0" y1="100" x2="30" y2="100" />
+        <line x1="200" y1="100" x2="170" y2="100" />
+        <line x1="150" y1="150" x2="130" y2="130" />
+        <line x1="50" y1="50" x2="70" y2="70" />
+        <line x1="150" y1="50" x2="130" y2="70" />
+        <line x1="50" y1="150" x2="70" y2="130" />
+    </g>
+</svg>

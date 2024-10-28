@@ -14,14 +14,11 @@ import {
 } from "@/components/ui/navigation-menu";
 
 // contexts
-import { useWindowEvent } from "@/contexts/window-event-provider";
 
 // utils
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
-  const { scrollY } = useWindowEvent();
-
   const mainLink = [
     {
       name: "Home",
@@ -53,19 +50,8 @@ const Navbar = () => {
     },
   ];
 
-  const stickToTop = scrollY > 50;
-
   return (
-    <div
-      className={cn(
-        `flex justify-between items-center rounded-xl fixed z-[40] bg-opacity-80 py-4`,
-        "transition-all duration-300 ease-out",
-        stickToTop
-          ? "xs:top-4 xs:right-4 xs:left-4 xl:top-6  xl:right-6 xl:left-6 drop-shadow-lg pr-2"
-          : "w-full top-8 xs:pl-4 xs:pr-5 xl:pr-14",
-        stickToTop ? "bg-accent-light-100 bg-[#F8F9FB] " : undefined
-      )}
-    >
+    <div className="flex justify-center ">
       <NavigationMenu>
         <NavigationMenuList>
           {mainLink.map(({ name, link }) => (
@@ -74,7 +60,7 @@ const Navbar = () => {
                 <NavigationMenuLink
                   className={cn(
                     navigationMenuTriggerStyle(undefined),
-                    "xs:hidden  text-[1.2em]",
+                    "xs:hidden text-[1.2em]",
                     "lg:block text-[1.2em]"
                   )}
                 >

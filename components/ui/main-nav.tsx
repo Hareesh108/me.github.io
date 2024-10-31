@@ -28,20 +28,16 @@ const MainNav = () => {
 
   const mainLink = [
     {
-      name: "Home",
-      link: "/",
-    },
-    {
       name: "About Me",
-      link: "/about-me",
+      link: "#about-me",
     },
     {
       name: "Projects",
-      link: "/projects",
+      link: "#projects",
     },
     {
       name: "Skills",
-      link: "/skills",
+      link: "#skills",
     },
   ];
   // const isHome = pathname === "/";
@@ -59,7 +55,9 @@ const MainNav = () => {
       )}
     >
       <div className={cn(`flex-grow pl-3`)}>
-        <h1 className="text-2xl font-bold">Hareesh Bhittam</h1>
+        <Link href="/" passHref>
+          <h1 className="text-2xl font-bold">Hareesh Bhittam</h1>
+        </Link>
       </div>
 
       <NavigationMenu>

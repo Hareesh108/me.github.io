@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen ">
       {/* Container for max-width */}
       <div className="w-full max-w-screen-xl mx-auto px-4">
         {/* Header Section */}

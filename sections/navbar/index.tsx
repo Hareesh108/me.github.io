@@ -17,6 +17,7 @@ import {
 
 // utils
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/theme";
 
 const Navbar = () => {
   const mainLink = [
@@ -71,6 +72,7 @@ const Navbar = () => {
           ))}
         </NavigationMenuList>
       </NavigationMenu>
+      <ThemeToggle />
     </div>
   );
 };

@@ -21,6 +21,7 @@ import { useWindowEvent } from "@/contexts/window-event-provider";
 // utils
 import { cn } from "@/lib/utils";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./sheet";
+import { ThemeToggle } from "../theme";
 
 const MainNav = () => {
   const { scrollY } = useWindowEvent();
@@ -114,6 +115,7 @@ const MainNav = () => {
           </Sheet>
         </div>
       </NavigationMenu>
+      <ThemeToggle />
     </div>
   );
 };

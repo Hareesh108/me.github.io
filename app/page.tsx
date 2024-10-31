@@ -1,59 +1,39 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen">
-        <div className="w-full max-w-screen-xl mx-auto ">
-          <header
-            className="w-full py-6 shadow-lg text-center"
-            style={{
-              backgroundColor: "hsl(var(--primary))",
-              color: "hsl(var(--primary-foreground))",
-            }}
-          >
-            <h1 className="text-4xl font-bold">Hareesh Bhittam</h1>
-            <p className="text-lg">
-              Full-Stack Developer | React | TypeScript | Java | Spring Boot
-            </p>
-          </header>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center min-h-screen max-w-screen-xl mx-auto">
+        <div className="relative flex justify-center">
+          <Image
+            src="/profile/harsh01.jpg"
+            alt="Profile Picture"
+            width={500}
+            height={500}
+            className="rounded-lg border-4 border-primary shadow-lg"
+          />
+        </div>
+        <div className="flex flex-col gap-2 md:items-start">
+          <h1 className="text-6xl font-bold">Hi! I&apos;m Hareesh.</h1>
+          <h4 className="text-xl">
+            Creating a brighter tomorrow with technology and innovation.
+          </h4>
+          <p>
+            I am a passionate full-stack developer with expertise in building
+            dynamic, responsive applications using modern frameworks and
+            technologies. My experience spans across frontend technologies like
+            React and TypeScript, as well as backend services with Java and
+            Spring Boot.
+          </p>
+          <p className="text-lg">
+            Full-Stack Developer | React | TypeScript | Java | Spring Boot
+          </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center min-h-screen">
+
+      <div className="flex flex-col items-start justify-start">
         {/* Container for max-width */}
         <div className="w-full max-w-screen-xl mx-auto ">
-          {/* Header Section */}
-          <header
-            className="w-full py-6 shadow-lg text-center"
-            style={{
-              backgroundColor: "hsl(var(--primary))",
-              color: "hsl(var(--primary-foreground))",
-            }}
-          >
-            <h1 className="text-4xl font-bold">Hareesh Bhittam</h1>
-            <p className="text-lg">
-              Full-Stack Developer | React | TypeScript | Java | Spring Boot
-            </p>
-          </header>
-
-          {/* About Section */}
-          <section className="flex flex-col items-center py-16 px-6 text-center">
-            <h2
-              className="text-3xl font-semibold"
-              style={{ color: "hsl(var(--foreground))" }}
-            >
-              About Me
-            </h2>
-            <p
-              className="mt-4"
-              style={{ color: "hsl(var(--muted-foreground))" }}
-            >
-              I am a passionate full-stack developer with expertise in building
-              dynamic, responsive applications using modern frameworks and
-              technologies. My experience spans across frontend technologies
-              like React and TypeScript, as well as backend services with Java
-              and Spring Boot.
-            </p>
-          </section>
-
           {/* Skills Section */}
           <section
             className="w-full py-16"

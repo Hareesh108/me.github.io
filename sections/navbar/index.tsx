@@ -37,22 +37,10 @@ const Navbar = () => {
       name: "Skills",
       link: "/skills",
     },
-    {
-      name: "Services",
-      link: "/services",
-    },
-    {
-      name: "Blog",
-      link: "/blog",
-    },
-    {
-      name: "Contact",
-      link: "/contact",
-    },
   ];
 
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center w-full max-w-screen-xl mx-auto">
       <NavigationMenu>
         <NavigationMenuList>
           {mainLink.map(({ name, link }) => (

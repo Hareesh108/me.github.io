@@ -51,14 +51,14 @@ const MainNav = () => {
     <div
       className={cn(
         `w-full max-w-screen-xl mx-auto flex justify-between items-center  fixed z-[40] bg-opacity-80 py-4 `,
-        "transition-all duration-300 ease-out",
+        "transition-all duration-100 ease-out",
         stickToTop
           ? "top-5 left-1 right-1 drop-shadow-lg justify-end border-2 rounded-xl"
           : "top-5 left-1 right-1 justify-end",
         stickToTop ? "bg-accent-light-100 " : undefined
       )}
     >
-      <div className={cn(`flex-grow `, stickToTop ? "pl-3" : undefined)}>
+      <div className={cn(`flex-grow pl-3`)}>
         <h1 className="text-2xl font-bold">Hareesh Bhittam</h1>
       </div>
 

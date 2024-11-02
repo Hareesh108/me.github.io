@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function LandingPage() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center min-h-screen max-w-screen-xl mx-auto mt-24 md:mt-0">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center min-h-screen max-w-screen-xl mx-auto mt-28 md:mt-0">
       <div className="relative flex justify-center mx-4 lg:mx-auto">
         <Image
           src="/profile/harsh01.jpg"

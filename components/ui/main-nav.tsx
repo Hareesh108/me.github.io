@@ -52,8 +52,13 @@ const MainNav = () => {
         stickToTop
           ? "top-5 left-1 right-1 drop-shadow-lg justify-end border-2 rounded-xl"
           : "top-5 left-1 right-1 justify-end",
-        stickToTop ? "bg-accent-light-100 " : undefined
+        stickToTop ? "bg-inherit" : undefined
       )}
+      style={{
+        backgroundColor: stickToTop
+          ? "hsl(var(--background) / 0.5)"
+          : "inherit",
+      }}
     >
       <div className={cn(`flex-grow pl-3`)}>
         <Link href="/" passHref>
@@ -70,8 +75,8 @@ const MainNav = () => {
                 <NavigationMenuLink
                   className={cn(
                     navigationMenuTriggerStyle(pathname === link),
-                    "xs:hidden  text-[1.2em]",
-                    "lg:block text-[1.2em]"
+                    "xs:hidden  text-[1.2em] ",
+                    "lg:block text-[1.2em] font-bold"
                   )}
                 >
                   {name}
@@ -135,7 +140,7 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
+          <div className="text-sm font-medium leading-none ">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>

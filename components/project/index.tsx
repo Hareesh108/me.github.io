@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function ProjectPage() {
   return (
-    <div className="min-h-screen max-w-screen-xl mx-auto">
+    <div className="min-h-screen max-w-screen-xl mx-4 xl:mx-auto">
       <h1 className="text-3xl sm:text-4xl font-bold text-center md:text-start mb-6">
         Featured projects
       </h1>

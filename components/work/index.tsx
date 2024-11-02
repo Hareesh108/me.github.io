@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WorkPage() {
   return (
-    <div className="max-w-screen-xl mx-auto mt-6 md:mt-10">
+    <div className="max-w-screen-xl mt-6 md:mt-10 mx-4 xl:mx-auto">
       <div
         className="w-full py-16"
         style={{

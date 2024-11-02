@@ -67,26 +67,28 @@ const MainNav = () => {
       </div>
 
       <NavigationMenu>
-        <NavigationMenuList>
-          {/* Above medium size */}
-          {mainLink.map(({ name, link }) => (
-            <NavigationMenuItem key={name + link}>
-              <Link href={link} legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(pathname === link),
-                    "xs:hidden  text-[1.2em] ",
-                    "lg:block text-[1.2em] font-bold"
-                  )}
-                >
-                  {name}
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-          ))}
-        </NavigationMenuList>
+        <div className="hidden md:block">
+          <NavigationMenuList>
+            {/* Above medium size */}
+            {mainLink.map(({ name, link }) => (
+              <NavigationMenuItem key={name + link}>
+                <Link href={link} legacyBehavior passHref>
+                  <NavigationMenuLink
+                    className={cn(
+                      navigationMenuTriggerStyle(pathname === link),
+                      "xs:hidden  text-[1.2em] ",
+                      "lg:block text-[1.2em] font-bold"
+                    )}
+                  >
+                    {name}
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </div>
         {/* Below medium size */}
-        <div className="lg:hidden ">
+        <div className="md:hidden">
           <Sheet>
             <SheetTrigger>
               <Image

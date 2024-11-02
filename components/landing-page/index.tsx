@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function LandingPage() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center min-h-screen max-w-screen-xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center min-h-screen max-w-screen-xl mx-auto mt-24 md:mt:0">
       <div className="relative flex justify-center mx-4 lg:mx-auto">
         <Image
           src="/profile/harsh01.jpg"
@@ -14,7 +14,7 @@ export default function LandingPage() {
         />
       </div>
       <div className="flex flex-col gap-2  md:items-start mx-4 lg:mx-auto">
-        <h1 className="text-4xl sm:text-6xl font-bold text-center">
+        <h1 className="text-4xl sm:text-6xl font-bold text-center md:text-start">
           Hi! I&apos;m Hareesh.
         </h1>
         <h4 className="text-xl text-center md:text-start">

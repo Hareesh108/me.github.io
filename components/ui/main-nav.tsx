@@ -47,11 +47,11 @@ const MainNav = () => {
   return (
     <div
       className={cn(
-        `w-full max-w-screen-xl mx-auto flex justify-between items-center  fixed z-[40] bg-opacity-80 py-4 `,
+        `w-full max-w-screen-xl mx-auto flex justify-between items-center fixed z-[40] bg-opacity-80 py-4 top-0 md:top-5 left-0 md:left-1 right-0 md:right-1`,
         "transition-all duration-100 ease-out",
         stickToTop
-          ? "top-5 left-1 right-1 drop-shadow-lg justify-end border-2 rounded-xl"
-          : "top-5 left-1 right-1 justify-end",
+          ? "drop-shadow-lg justify-end border-2 md:rounded-xl"
+          : "justify-end",
         stickToTop ? "bg-inherit" : undefined
       )}
       style={{
@@ -89,19 +89,20 @@ const MainNav = () => {
         </div>
 
         {/* Below medium size */}
-        <div className="md:hidden">
+        <div className="md:hidden flex flex-row">
+          <ThemeToggle />
           <Sheet>
-            <SheetTrigger className="mr-4">
+            <SheetTrigger className="mr-4 ">
               <Image
                 src="/assets/navbar.svg"
-                width={41}
-                height={41}
+                width={35}
+                height={35}
                 alt="navbar logo"
                 className="hover:cursor-pointer"
               />
             </SheetTrigger>
             <SheetContent>
-              <NavigationMenuList className="xs:flex-col xs:items-end gap-4 mt-8">
+              <NavigationMenuList className="gap-4 mt-8 flex flex-col">
                 {/* Above medium size */}
                 {mainLink.map(({ name, link }) => (
                   <NavigationMenuItem key={name + link}>
@@ -110,7 +111,7 @@ const MainNav = () => {
                         className={cn(
                           navigationMenuTriggerStyle(pathname === link),
                           "xs:block  text-[1.1em]",
-                          "lg:hidden text-[1.1em]"
+                          "lg:hidden text-[1.1em] font-bold"
                         )}
                       >
                         <SheetClose>{name}</SheetClose>

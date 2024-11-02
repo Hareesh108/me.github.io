@@ -10,7 +10,10 @@ export default function ContactPage() {
         >
           Get in Touch
         </h2>
-        <p className="mt-4" style={{ color: "hsl(var(--muted-foreground))" }}>
+        <p
+          className="mt-4"
+          // style={{ color: "hsl(var(--primary))" }}
+        >
           Interested in working together or have a question? Feel free to reach
           out!
         </p>

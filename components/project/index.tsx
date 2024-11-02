@@ -17,7 +17,7 @@ export default function ProjectPage() {
         {PROJECT_INFO.map((project) => (
           <motion.div
             whileHover={{
-              // scale: 1.05,
+              scale: 1.02,
               boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.2)",
             }}
             transition={{ duration: 0.3 }}

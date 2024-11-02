@@ -1,12 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import {
-  FaLinkedin,
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-  FaGithub,
-} from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -19,12 +13,6 @@ export default function Footer() {
         }}
       >
         <div className="flex space-x-4 justify-center">
-          <Link
-            href="https://www.facebook.com/people/Hareesh-Bhittam/100009172282279/"
-            target="_blank"
-          >
-            <FaFacebook size={24} />
-          </Link>
           <Link
             href="https://www.linkedin.com/in/hareeshbhittam/"
             target="_blank"
@@ -46,8 +34,10 @@ export default function Footer() {
         </div>
         <div>
           Created By{" "}
-          <span className="font-bold text-yellow-600 ">Hareesh Bhittam</span> |
-          © 2024 All rights reserved.
+          <span className="font-bold" style={{ color: "hsl(var(--primary))" }}>
+            Hareesh Bhittam
+          </span>{" "}
+          | © 2024 All rights reserved.
         </div>
       </footer>
     </div>

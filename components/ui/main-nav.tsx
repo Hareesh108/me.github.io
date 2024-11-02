@@ -68,8 +68,8 @@ const MainNav = () => {
 
       <NavigationMenu>
         <div className="hidden md:block">
+          {/* Above medium size */}
           <NavigationMenuList>
-            {/* Above medium size */}
             {mainLink.map(({ name, link }) => (
               <NavigationMenuItem key={name + link}>
                 <Link href={link} legacyBehavior passHref>
@@ -87,16 +87,17 @@ const MainNav = () => {
             ))}
           </NavigationMenuList>
         </div>
+
         {/* Below medium size */}
         <div className="md:hidden">
           <Sheet>
-            <SheetTrigger>
+            <SheetTrigger className="mr-4">
               <Image
                 src="/assets/navbar.svg"
                 width={41}
                 height={41}
                 alt="navbar logo"
-                className="hover-cursor-pointer"
+                className="hover:cursor-pointer"
               />
             </SheetTrigger>
             <SheetContent>
@@ -122,7 +123,9 @@ const MainNav = () => {
           </Sheet>
         </div>
       </NavigationMenu>
-      <ThemeToggle />
+      <div className="hidden md:block">
+        <ThemeToggle />
+      </div>
     </div>
   );
 };

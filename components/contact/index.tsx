@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../ui/button";
 
 export default function ContactPage() {
   return (
@@ -10,22 +11,12 @@ export default function ContactPage() {
         >
           Get in Touch
         </h2>
-        <p
-          className="mt-4"
-          // style={{ color: "hsl(var(--primary))" }}
-        >
+        <p className="mt-4">
           Interested in working together or have a question? Feel free to reach
           out!
         </p>
-        <a
-          href="mailto:hareeshbhittam@email.com"
-          className="mt-6 px-8 py-3 font-medium rounded shadow transition duration-300"
-          style={{
-            backgroundColor: "hsl(var(--primary))",
-            color: "hsl(var(--primary-foreground))",
-          }}
-        >
-          Contact Me
+        <a href="mailto:hareeshbhittam@email.com">
+          <Button className="w-32 font-bold mt-5"> Contact Me</Button>
         </a>
       </div>
     </div>

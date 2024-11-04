@@ -8,17 +8,6 @@ export function cn(...inputs: ClassValue[]) {
 
 export const PROJECT_INFO = [{
   id: 0,
-  name: "JavaScript Quiz Game",
-  image: "/assets/project/project00.png",
-  description: "An interactive quiz game built with JavaScript, offering users a fun way to test their knowledge on various topics. This project showcases my skills in DOM manipulation and responsive design.",
-  link: "https://github.com/Hareesh108/JavaScript_Quiz",
-  bullets: [
-    "Dynamic question generation",
-    "Real-time score tracking and feedback"
-  ]
-},
-{
-  id: 1,
   name: "E-Commerce Website",
   image: "/assets/project/project01.png",
   description: "A complete e-commerce platform built with React, allowing users to browse products, add items to cart, and checkout. This project demonstrates my abilities in frontend development and state management.",
@@ -29,7 +18,7 @@ export const PROJECT_INFO = [{
   ]
 },
 {
-  id: 2,
+  id: 1,
   name: "Twitter Clone",
   image: "/assets/project/project02.png",
   description: "A clone of Twitter's interface and basic functionalities, including user authentication, posting, and commenting. This project highlights my backend skills and experience with API integration.",
@@ -37,6 +26,17 @@ export const PROJECT_INFO = [{
   bullets: [
     "Real-time feed updates",
     "User authentication and profile management"
+  ]
+},
+{
+  id: 2,
+  name: "JavaScript Quiz Game",
+  image: "/assets/project/project00.png",
+  description: "An interactive quiz game built with JavaScript, offering users a fun way to test their knowledge on various topics. This project showcases my skills in DOM manipulation and responsive design.",
+  link: "https://github.com/Hareesh108/JavaScript_Quiz",
+  bullets: [
+    "Dynamic question generation",
+    "Real-time score tracking and feedback"
   ]
 },
 {

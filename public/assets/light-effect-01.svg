@@ -1,0 +1,18 @@
+<svg width="1200" height="150" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Lamp head (the light source) - doubled width -->
+    <rect x="300" y="60" width="600" height="5" fill="#10375C" rx="5" ry="5" />
+
+    <!-- Light spreading downwards -->
+    <defs>
+        <linearGradient id="lightGradient" x1="0.5" y1="0" x2="0.5" y2=".8">
+            <stop offset="0%" style="stop-color: #10375C; stop-opacity: 0.9;" />
+            <stop offset="5%" style="stop-color: #10375C; stop-opacity: 0.7;" />
+            <stop offset="10%" style="stop-color: #10375C; stop-opacity: 0.6;" />
+            <stop offset="70%" style="stop-color: #10375C; stop-opacity: 0;" />
+        </linearGradient>
+    </defs>
+
+    <!-- Light beam - even wider to match the doubled lamp head -->
+    <polygon points="300,70 900,70 1140,400 60,400" fill="url(#lightGradient)" />
+
+</svg>

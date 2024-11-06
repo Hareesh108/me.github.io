@@ -27,10 +27,18 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ThemeToggle } from "../theme";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
   const { scrollY } = useWindowEvent();
   const pathname = usePathname();
+
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => setMounted(true), []);
+
+  const isDarkMode = resolvedTheme === "dark" && mounted;
 
   const mainLink = [
     {
@@ -51,20 +59,26 @@ const Navbar = () => {
 
   return (
     <div>
-      <Image
-        src="/assets/home-left.svg"
-        width={350}
-        height={350}
-        alt="left img"
-        className="left-0 top-0 fixed h-[230px] md:h-[350px] w-[230px] md:w-[350px]"
-      />
-      <Image
-        src="/assets/home-right.svg"
-        width={350}
-        height={350}
-        alt="left img"
-        className="right-0 top-0 fixed h-[230px] md:h-[350px] w-[230px] md:w-[350px]"
-      />
+      {isDarkMode && (
+        <Image
+          src="/assets/home-left.svg"
+          width={350}
+          height={350}
+          alt="left img"
+          className="left-0 top-0 fixed h-[230px] md:h-[350px] w-[230px] md:w-[350px]"
+        />
+      )}
+
+      {isDarkMode && (
+        <Image
+          src="/assets/home-right.svg"
+          width={350}
+          height={350}
+          alt="left img"
+          className="right-0 top-0 fixed h-[230px] md:h-[350px] w-[230px] md:w-[350px]"
+        />
+      )}
+
       <div
         className={cn(
           `w-full max-w-screen-xl mx-auto flex justify-between items-center fixed z-[40] bg-opacity-80 py-4 top-0 md:top-5 left-0 md:left-1 right-0 md:right-1`,

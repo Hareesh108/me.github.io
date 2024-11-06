@@ -10,6 +10,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .text-classic {
+    color: #EB8317;
+  }
 }
 
 @layer base {

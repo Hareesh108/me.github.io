@@ -36,9 +36,132 @@ export default function WorkPage() {
         )}
       </div>
 
-      <div className="w-full">
+      <div className="w-full flex flex-col items-center">
         <h2 className="text-3xl font-semibold mb-8 text-center">Work</h2>
+
+        <div className="w-full max-w-xl space-y-8 px-4">
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-primary">
+              Full Stack Developer | Banking Domain
+            </h3>
+            <p className="underline text-lg">Experience: 2+ years</p>
+          </div>
+
+          <ul className="space-y-6 list-disc list-inside text-justify justify-evenly">
+            <li>
+              <strong className="underline">
+                Developed and maintained a Back Office Portal for Bank Employees
+              </strong>
+              <ul className="pl-6 list-disc list-inside text-justify">
+                <li>
+                  Built a secure, high-performance portal to streamline
+                  administrative tasks.
+                </li>
+                <li>
+                  Integrated role-based access control (RBAC) for secure data
+                  handling.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong className="underline">
+                Frontend Development with Modern Web Technologies
+              </strong>
+              <ul className="pl-6 list-disc list-inside text-justify">
+                <li>
+                  Utilized{" "}
+                  <span className="font-semibold text-classic">
+                    React, Next.js{" "}
+                  </span>
+                  and{" "}
+                  <span className="font-semibold text-classic">TypeScript</span>{" "}
+                  for responsive, user-friendly interfaces.
+                </li>
+                <li>
+                  Implemented{" "}
+                  <span className="font-semibold text-classic">
+                    Redux, React-hook-form, Yup, Zod, Chakra UI, Framer motion
+                  </span>{" "}
+                  and{" "}
+                  <span className="font-semibold text-classic">
+                    Material-UI
+                  </span>{" "}
+                  for consistent, accessible UI components.
+                </li>
+                <li>
+                  Managed state efficiently and optimized API data handling.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong className="underline">
+                Backend Development Using Java (Spring Boot) and Node.js
+              </strong>
+              <ul className="pl-6 list-disc list-inside text-justify">
+                <li>
+                  Developed scalable REST APIs with{" "}
+                  <span className="font-semibold text-classic">
+                    Spring Boot
+                  </span>{" "}
+                  to handle high-traffic operations.
+                </li>
+                <li>
+                  Implemented data security with{" "}
+                  <span className="font-semibold text-classic">
+                    Keycloak [Identity and Access Management (IAM)]
+                  </span>{" "}
+                  and JWT authentication.
+                </li>
+                <li>
+                  Integrated{" "}
+                  <span className="font-semibold text-classic">PostgreSQL</span>{" "}
+                  as the primary relational database for data storage.
+                </li>
+                <li>
+                  Utilized{" "}
+                  <span className="font-semibold text-classic">Redis</span> for
+                  caching to improve performance and reduce database load.
+                </li>
+                <li>
+                  Enhanced data processing for real-time banking operations.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong className="underline">
+                Collaborated with Cross-functional Teams
+              </strong>
+              <ul className="pl-6 list-disc list-inside text-justify">
+                <li>
+                  Worked closely with product managers, designers, and QA for
+                  quality assurance.
+                </li>
+                <li className="justify-evenly">
+                  Conducted code reviews, contributed to documentation, and
+                  ensured seamless project handover.Conducted code reviews,
+                  contributed to documentation, and ensured seamless project
+                  handover.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      {/* <div className="w-full">
+        <h2 className="text-3xl font-semibold mb-8 text-center">Work</h2>
+
+        <p className="text-xl">
+          I’m a Software Developer at{" "}
+          <a href="https://reldyn.co" target="_black">
+            <span className="text-primary">RELDYN</span>
+          </a>
+          {""}.
+        </p>
+      </div> */}
     </div>
   );
 }

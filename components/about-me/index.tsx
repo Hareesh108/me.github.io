@@ -1,5 +1,6 @@
 import React from "react";
-
+import Link from "next/link";
+import { FaLinkedin, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 export default function AboutMePage() {
   return (
     <div className="flex flex-col md:grid md:grid-cols-3 gap-8 items-center md:items-start justify-center  max-w-screen-xl mx-4 xl:mx-auto bg-muted px-6 py-8 rounded-xl">
@@ -32,10 +33,44 @@ export default function AboutMePage() {
         <p className="text-xl">
           I’m a Software Developer at{" "}
           <a href="https://reldyn.co" target="_black">
-            <span className="text-primary">RELDYN</span>
+            <span className="text-primary hover:text-pink-600 font-bold">
+              RELDYN
+            </span>
           </a>
           {""}.
         </p>
+        <div className="flex space-x-4 justify-center mt-2">
+          <Link
+            href="https://www.linkedin.com/in/hareeshbhittam/"
+            target="_blank"
+          >
+            <FaLinkedin
+              size={24}
+              className="text-primary hover:text-destructive"
+            />
+          </Link>
+          <Link
+            href="https://mobile.twitter.com/hareesh_bhittam"
+            target="_blank"
+          >
+            <FaTwitter
+              size={24}
+              className="text-primary hover:text-destructive"
+            />
+          </Link>
+          <Link href="https://github.com/Hareesh108" target="_blank">
+            <FaGithub
+              size={24}
+              className="text-primary hover:text-destructive"
+            />
+          </Link>
+          <Link href="https://www.instagram.com/_prince__108/" target="_blank">
+            <FaInstagram
+              size={24}
+              className="text-primary hover:text-destructive"
+            />
+          </Link>
+        </div>
       </div>
 
       <div className="flex flex-col gap-2 md:items-start mx-4 lg:mx-auto">

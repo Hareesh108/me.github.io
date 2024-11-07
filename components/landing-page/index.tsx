@@ -57,8 +57,30 @@ export default function LandingPage() {
       </div>
 
       <div className="flex flex-col gap-2  md:items-start mx-4 lg:mx-auto">
-        <h1 className="text-4xl sm:text-6xl font-bold text-center md:text-start">
-          Hi! I&apos;m Hareesh.
+        <h1 className="text-4xl sm:text-6xl z-[100] font-bold text-center md:text-start">
+          <span className="relative -z-10">
+            Hi! I&apos;m Hareesh.
+            {isDarkMode && (
+              <img
+                alt="Header underline"
+                loading="lazy"
+                width="300"
+                height="24"
+                src="assets/header-underline.svg"
+                className="absolute -bottom-1 lg:bottom-0 lg:w-4/5 left-0 lg:left-14 -z-20"
+              />
+            )}
+            {isLightMode && (
+              <img
+                alt="Header underline"
+                loading="lazy"
+                width="300"
+                height="24"
+                src="assets/header-underline-light.svg"
+                className="absolute -bottom-1 lg:bottom-0 lg:w-4/5 left-0 lg:left-14 -z-20"
+              />
+            )}
+          </span>
         </h1>
 
         <h2 className="text-center md:text-start mt-2">

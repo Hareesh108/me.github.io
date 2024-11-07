@@ -39,6 +39,7 @@ const Navbar = () => {
   React.useEffect(() => setMounted(true), []);
 
   const isDarkMode = resolvedTheme === "dark" && mounted;
+  const isLightMode = resolvedTheme === "light" && mounted;
 
   const mainLink = [
     {
@@ -52,10 +53,11 @@ const Navbar = () => {
   ];
   // const isHome = pathname === "/";
   const stickToTop = scrollY > 50;
+  const isNotTop = scrollY > 250;
 
   return (
     <div>
-      {isDarkMode && (
+      {isDarkMode && !isNotTop && (
         <Image
           src="/assets/home-left.svg"
           width={350}
@@ -65,7 +67,7 @@ const Navbar = () => {
         />
       )}
 
-      {isDarkMode && (
+      {isDarkMode && !isNotTop && (
         <Image
           src="/assets/home-right.svg"
           width={350}
@@ -91,12 +93,12 @@ const Navbar = () => {
         }}
       >
         {stickToTop && (
-          <div className="absolute inset-0 rounded-lg animate-gradient-border-before pointer-events-none"></div>
+          <div className="absolute inset-0 left-3 md:left-0 right-3 md:right-0 rounded-lg animate-gradient-border-before pointer-events-none"></div>
         )}
 
         <div className={cn(`flex-grow pl-3`)}>
           <Link href="/" passHref>
-            <h1 className="text-2xl font-bold">Hareesh Bhittam</h1>
+            <h1 className="text-2xl font-bold ml-4 md:ml-0">Hareesh Bhittam</h1>
           </Link>
         </div>
 
@@ -126,14 +128,25 @@ const Navbar = () => {
           <div className="md:hidden flex flex-row">
             <ThemeToggle />
             <Sheet>
-              <SheetTrigger className="mr-4 ">
-                <Image
-                  src="/assets/navbar.svg"
-                  width={35}
-                  height={35}
-                  alt="navbar logo"
-                  className="hover:cursor-pointer"
-                />
+              <SheetTrigger className="mr-8">
+                {isDarkMode && (
+                  <Image
+                    src="/assets/navbar.svg"
+                    width={35}
+                    height={35}
+                    alt="navbar logo"
+                    className="hover:cursor-pointer"
+                  />
+                )}
+                {isLightMode && (
+                  <Image
+                    src="/assets/navbar-light.svg"
+                    width={35}
+                    height={35}
+                    alt="navbar logo"
+                    className="hover:cursor-pointer"
+                  />
+                )}
               </SheetTrigger>
               <SheetContent>
                 <NavigationMenuList className="gap-4 mt-8 flex flex-col">

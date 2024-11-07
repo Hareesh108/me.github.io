@@ -17,26 +17,40 @@ export default function Footer() {
             href="https://www.linkedin.com/in/hareeshbhittam/"
             target="_blank"
           >
-            <FaLinkedin size={24} />
+            <FaLinkedin
+              size={24}
+              className="text-primary hover:text-destructive"
+            />
           </Link>
           <Link
             href="https://mobile.twitter.com/hareesh_bhittam"
             target="_blank"
           >
-            <FaTwitter size={24} />
+            <FaTwitter
+              size={24}
+              className="text-primary hover:text-destructive"
+            />
           </Link>
           <Link href="https://github.com/Hareesh108" target="_blank">
-            <FaGithub size={24} />
+            <FaGithub
+              size={24}
+              className="text-primary hover:text-destructive"
+            />
           </Link>
           <Link href="https://www.instagram.com/_prince__108/" target="_blank">
-            <FaInstagram size={24} />
+            <FaInstagram
+              size={24}
+              className="text-primary hover:text-destructive"
+            />
           </Link>
         </div>
         <div>
           Created By{" "}
-          <span className="font-bold" style={{ color: "hsl(var(--primary))" }}>
-            Hareesh Bhittam
-          </span>{" "}
+          <a href="https://www.linkedin.com/in/hareeshbhittam/" target="_black">
+            <span className="font-bold text-primary hover:text-destructive">
+              Me
+            </span>
+          </a>{" "}
           | © 2024 All rights reserved.
         </div>
       </footer>

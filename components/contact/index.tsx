@@ -58,12 +58,15 @@ export default function ContactPage() {
           </svg>
         </div>
 
-        <h5>
+        <h5 className="-mt-4">
           Interested in working together or have a question? Feel free to reach
           out!
         </h5>
         <a href="mailto:hareeshbhittam@email.com">
-          <Button className="w-32 font-bold mt-5"> Contact Me</Button>
+          <Button className="w-32 font-bold mt-5" variant="default" size="lg">
+            {" "}
+            Contact Me
+          </Button>
         </a>
       </div>
     </div>

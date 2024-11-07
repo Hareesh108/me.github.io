@@ -1,3 +1,4 @@
+import AboutMePage from "@/components/about-me";
 import ContactPage from "@/components/contact";
 import Footer from "@/components/footer";
 import LandingPage from "@/components/landing-page";
@@ -8,6 +9,8 @@ export default function Home() {
   return (
     <>
       <LandingPage />
+
+      <AboutMePage />
 
       <ProjectPage />
 

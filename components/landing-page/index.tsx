@@ -23,22 +23,13 @@ export default function LandingPage() {
       </div>
 
       <div className="flex flex-col gap-2  md:items-start mx-4 lg:mx-auto">
-        <h1 className="text-4xl sm:text-6xl font-bold text-center md:text-start">
+        <h1 className="sm:text-6xl font-bold text-center md:text-start">
           Hi! I&apos;m Hareesh.
         </h1>
-        <h4 className="text-xl text-center md:text-start">
+
+        <h2 className="text-center md:text-start mt-2">
           Creating a brighter tomorrow with technology and innovation.
-        </h4>
-        <p className="text-wrap text-center md:text-start">
-          I am a passionate full-stack developer with expertise in building
-          dynamic, responsive applications using modern frameworks and
-          technologies. My experience spans across frontend technologies like
-          React and TypeScript, as well as backend services with Java and Spring
-          Boot.
-        </p>
-        <p className="text-lg text-center md:text-start">
-          Full-Stack Developer | React | TypeScript | Java | Spring Boot
-        </p>
+        </h2>
       </div>
     </div>
   );

@@ -1,0 +1,61 @@
+import React from "react";
+
+export default function AboutMePage() {
+  return (
+    <div className="flex flex-col md:grid md:grid-cols-3 gap-8 items-center md:items-start justify-center  max-w-screen-xl mx-4 xl:mx-auto bg-muted px-6 py-8 rounded-xl">
+      <div className="flex flex-col gap-2 items-center md:items-start mx-4 lg:mx-auto">
+        <div className="flex justify-center items-center rounded-full text-primary bg-primary-100 border-[10px] border-primary-50 w-14 h-14">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-zap"
+          >
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+        </div>
+
+        <h1 className="text-4xl font-bold">About Me.</h1>
+
+        {/* <h4 className="text-xl text-wrap text-start">
+          I am a passionate full-stack developer with expertise in building
+          dynamic, responsive applications using modern frameworks and
+          technologies.
+        </h4> */}
+
+        <p className="text-xl">
+          I’m a Software Developer at{" "}
+          <a href="https://reldyn.co" target="_black">
+            <span className="text-primary">RELDYN</span>
+          </a>
+          {""}.
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-2 md:items-start mx-4 lg:mx-auto">
+        <h1 className="text-3xl font-bold">Hire me as developer.</h1>
+
+        <h5 className="text-wrap text-start">
+          With extensive experience in building production-ready applications, I
+          am well-equipped to bring your next project to life with precision and
+          care. Let’s work together to create something exceptional.
+        </h5>
+      </div>
+
+      <div className="flex flex-col gap-2  md:items-start mx-4 lg:mx-auto">
+        <h1 className="text-3xl font-bold">Book a consultation.</h1>
+
+        <h5 className="text-wrap text-start">
+          Looking for guidance on your project? Book a consultation to gain
+          valuable insights and clarity for your next steps.{" "}
+        </h5>
+      </div>
+    </div>
+  );
+}

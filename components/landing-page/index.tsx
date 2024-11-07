@@ -1,19 +1,51 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { CgPentagonDown } from "react-icons/cg";
+import { useTheme } from "next-themes";
 
 export default function LandingPage() {
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => setMounted(true), []);
+
+  const isDarkMode = resolvedTheme === "dark" && mounted;
+  const isLightMode = resolvedTheme === "light" && mounted;
+
   return (
     <div className="flex flex-col md:grid md:grid-cols-2 gap-12 items-center justify-center min-h-screen max-w-screen-xl mt-16 md:mt-0 mx-4 xl:mx-auto">
+      {isDarkMode && (
+        <Image
+          src="/assets/new.svg"
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+          className="z-[-1]" // Ensures it stays behind other content
+        />
+      )}
       <div className="relative flex justify-center mx-24 sm:mx-32 md:mx-auto">
         <div className="relative">
-          <Image
-            src="/assets/test4.svg"
-            alt="Overlay Image"
-            width={500}
-            height={500}
-          />
+          {isDarkMode && (
+            <Image
+              src="/assets/hero-back.svg"
+              alt="Overlay Image"
+              width={500}
+              height={500}
+            />
+          )}
+
+          {isLightMode && (
+            <Image
+              src="/assets/hero-back-light.svg"
+              alt="Overlay Image"
+              width={500}
+              height={500}
+            />
+          )}
+
           <Image
             src="/profile/harsh01.jpg"
             alt="Profile Picture"

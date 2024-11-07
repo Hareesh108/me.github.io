@@ -34,9 +34,11 @@ export default function LandingPage() {
         </h2>
 
         <div className="flex justify-center md:justify-start  gap-4 mt-4">
-          <Button className="text-lg" variant="secondary" size="lg">
-            <CgPentagonDown size={50} /> Know more
-          </Button>
+          <a href="#about-me">
+            <Button className="text-lg" variant="secondary" size="lg">
+              <CgPentagonDown size={50} /> Know more
+            </Button>
+          </a>
           <a href="mailto:hareeshbhittam@email.com">
             <Button className="text-lg" variant="default" size="lg">
               Get in touch

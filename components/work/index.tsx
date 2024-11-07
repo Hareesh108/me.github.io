@@ -14,7 +14,7 @@ export default function WorkPage() {
   const isLightMode = resolvedTheme === "light" && mounted;
 
   return (
-    <div className="max-w-screen-xl mt-6 md:mt-10 mx-4 xl:mx-auto">
+    <div id="skills" className="max-w-screen-xl mt-6 md:mt-10 mx-4 xl:mx-auto">
       <div className="relative">
         {isDarkMode && (
           <Image

@@ -3,7 +3,10 @@ import Link from "next/link";
 import { FaLinkedin, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 export default function AboutMePage() {
   return (
-    <div className="flex flex-col md:grid md:grid-cols-3 gap-8 items-center md:items-start justify-center  max-w-screen-xl mx-4 xl:mx-auto bg-muted px-6 py-8 rounded-xl">
+    <div
+      id="about-me"
+      className="flex flex-col md:grid md:grid-cols-3 gap-8 items-center md:items-start justify-center  max-w-screen-xl mx-4 xl:mx-auto bg-muted px-6 py-8 rounded-xl"
+    >
       <div className="flex flex-col gap-2 items-center md:items-start mx-4 lg:mx-auto">
         <div className="flex justify-center items-center rounded-full text-primary bg-primary-100 border-[10px] border-primary-50 w-14 h-14">
           <svg

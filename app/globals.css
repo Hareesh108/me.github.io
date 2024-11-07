@@ -36,6 +36,23 @@ h6 {
   line-height: 1.50rem ;
 }
 
+@keyframes gradient-border {
+  0% {
+    border-image-source: linear-gradient(45deg, #ff0066, #ff6600, #ffcc00, #66ccff, #ff66cc);
+    border-image-slice: 1;
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #ff6600, #ffcc00, #66ccff, #ff66cc, #ff0066);
+    border-image-slice: 1;
+  }
+}
+
+.animate-gradient-border {
+  animation: gradient-border 3s linear infinite;
+  border-width: 2px;
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -75,9 +75,12 @@ export default function ProjectPage() {
             }}
             transition={{ duration: 0.3 }}
             key={project.id}
-            className="w-full p-4 rounded-lg shadow-lg border border-gray-200 bg-#c86f6f hover:bg-yellow-50"
+            className="w-full p-4 rounded-lg shadow-lg bg-#c86f6f hover:bg-muted relative overflow-hidden"
           >
-            <Card className="overflow-hidden rounded-lg w-full">
+            {/* Animated Border */}
+            <div className="absolute inset-0 border-2 border-transparent bg-clip-border rounded-lg animate-gradient-border"></div>
+
+            <Card className="overflow-hidden rounded-lg w-full relative">
               <CardHeader>
                 <Image
                   src={project.image}

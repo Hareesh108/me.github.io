@@ -11,7 +11,7 @@ export default function ProjectPage() {
   return (
     <div
       id="projects"
-      className="min-h-screen max-w-screen-xl mx-4 xl:mx-auto mt-12"
+      className="min-h-screen max-w-screen-xl mx-4 xl:mx-auto m-8 md:mt-12"
     >
       <div className="flex justify-center">
         <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">

@@ -42,10 +42,6 @@ const Navbar = () => {
 
   const mainLink = [
     {
-      name: "About Me",
-      link: "#about-me",
-    },
-    {
       name: "Projects",
       link: "#projects",
     },
@@ -86,11 +82,11 @@ const Navbar = () => {
           stickToTop
             ? "drop-shadow-lg justify-end border-2 md:rounded-xl"
             : "justify-end",
-          stickToTop ? "bg-inherit" : undefined
+          stickToTop ? "bg-muted" : undefined
         )}
         style={{
           backgroundColor: stickToTop
-            ? "hsl(var(--background) / 0.5)"
+            ? "hsl(var(--background) / 0.7)"
             : "inherit",
         }}
       >

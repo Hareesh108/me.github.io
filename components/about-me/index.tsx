@@ -33,7 +33,7 @@ export default function AboutMePage() {
           technologies.
         </h4> */}
 
-        <p className="text-xl">
+        <p className="text-lg md:text-xl text-center">
           I’m a Software Developer at{" "}
           <a href="https://reldyn.co" target="_black">
             <span className="text-primary hover:text-pink-600 font-bold">
@@ -77,22 +77,22 @@ export default function AboutMePage() {
       </div>
 
       <div className="flex flex-col gap-2 items-center md:items-start mx-4 lg:mx-auto">
-        <h1 className="text-3xl font-bold">Hire me as developer</h1>
+        <h1 className="text-xl md:text-3xl font-bold">Hire me as developer.</h1>
 
-        <h5 className="text-wrap text-justify w-11/12">
+        <p className="text-wrap text-justify w-11/12">
           With extensive experience in building production-ready applications, I
           am well equipped to bring your next project to life with precision and
           care. Let’s work together to create something exceptional.
-        </h5>
+        </p>
       </div>
 
       <div className="flex flex-col gap-2 items-center md:items-start mx-4 lg:mx-auto">
-        <h1 className="text-3xl font-bold">Book a consultation</h1>
+        <h1 className="text-xl md:text-3xl font-bold">Book a consultation.</h1>
 
-        <h5 className="text-wrap text-justify w-11/12">
+        <p className="text-wrap text-justify w-11/12">
           Looking for guidance on your project? Book a consultation to gain
           valuable insights and clarity for your next steps.{" "}
-        </h5>
+        </p>
       </div>
     </div>
   );

@@ -36,20 +36,29 @@ h6 {
   line-height: 1.50rem ;
 }
 
-@keyframes gradient-border {
+@keyframes gradient-border-animation {
   0% {
-    border-image-source: linear-gradient(45deg, #ff0066, #ff6600, #ffcc00, #66ccff, #ff66cc);
-    border-image-slice: 1;
+    background-position: 0% 50%;
   }
   100% {
-    border-image-source: linear-gradient(45deg, #ff6600, #ffcc00, #66ccff, #ff66cc, #ff0066);
-    border-image-slice: 1;
+    background-position: 100% 50%;
   }
 }
 
-.animate-gradient-border {
-  animation: gradient-border 3s linear infinite;
-  border-width: 2px;
+.animate-gradient-border-before::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px; 
+  background: linear-gradient(90deg, #ff0066, #ff6600, #ffcc00, #66ccff, #ff66cc);
+  background-size: 300% 300%;
+  animation: gradient-border-animation 13s ease infinite;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+          mask-composite: exclude;
 }
 
 

@@ -90,6 +90,10 @@ const Navbar = () => {
             : "inherit",
         }}
       >
+        {stickToTop && (
+          <div className="absolute inset-0 rounded-lg animate-gradient-border-before pointer-events-none"></div>
+        )}
+
         <div className={cn(`flex-grow pl-3`)}>
           <Link href="/" passHref>
             <h1 className="text-2xl font-bold">Hareesh Bhittam</h1>

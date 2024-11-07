@@ -37,7 +37,7 @@ export default function Footer() {
               className="text-primary hover:text-destructive"
             />
           </Link>
-          <Link href="https://www.instagram.com/_prince__108/" target="_blank">
+          <Link href="https://www.instagram.com/_harsh_20.6/" target="_blank">
             <FaInstagram
               size={24}
               className="text-primary hover:text-destructive"

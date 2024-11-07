@@ -42,7 +42,8 @@ export default function AboutMePage() {
           </a>
           {""}.
         </p>
-        <div className="flex space-x-4 justify-center mt-2">
+
+        <div className="flex space-x-4 justify-center mt-2 md:mt-0">
           <Link
             href="https://www.linkedin.com/in/hareeshbhittam/"
             target="_blank"
@@ -80,9 +81,10 @@ export default function AboutMePage() {
         <h1 className="text-xl md:text-3xl font-bold">Hire me as developer.</h1>
 
         <p className="text-wrap text-justify w-11/12">
-          With extensive experience in building production-ready applications, I
-          am well equipped to bring your next project to life with precision and
-          care. Let’s work together to create something exceptional.
+          With extensive experience in building production ready applications.{" "}
+          <br /> I am well equipped to bring your next project to life with
+          precision and care. Let’s work together to create something
+          exceptional.
         </p>
       </div>
 

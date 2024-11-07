@@ -53,10 +53,7 @@ export default function AboutMePage() {
               className="text-primary hover:text-destructive"
             />
           </Link>
-          <Link
-            href="https://mobile.twitter.com/hareesh_bhittam"
-            target="_blank"
-          >
+          <Link href="https://x.com/hareesh_bhittam" target="_blank">
             <FaTwitter
               size={24}
               className="text-primary hover:text-destructive"

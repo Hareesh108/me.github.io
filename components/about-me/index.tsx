@@ -1,14 +1,37 @@
-import React from "react";
+"use client";
+
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 import { FaLinkedin, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 export default function AboutMePage() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const audioRef = useRef<any>(null);
+
+  const togglePlay = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
     <div
       id="about-me"
       className="flex flex-col md:grid md:grid-cols-3 gap-8 items-center md:items-start justify-center  max-w-screen-xl mx-4 xl:mx-auto bg-muted px-6 py-10 md:py-8 rounded-xl"
     >
+      {/* Audio element */}
+      <audio ref={audioRef} src="/music/SHAED-ZAYN-Trampoline.mp3" loop />
+
       <div className="flex flex-col gap-2 items-center md:items-start mx-4 lg:mx-auto">
-        <div className="flex justify-center items-center rounded-full text-primary bg-primary-100 border-[10px] border-primary-50 w-14 h-14">
+        <div
+          className="flex justify-center items-center rounded-full text-primary bg-primary-100 border-[10px] border-primary-50 w-14 h-14 cursor-pointer"
+          onClick={togglePlay}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

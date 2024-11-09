@@ -42,7 +42,7 @@ export default function Footer() {
           </Link>
         </div>
         <div>
-          Created By{" "}
+          Created by{" "}
           <a href="https://www.linkedin.com/in/hareeshbhittam/" target="_black">
             <span className="font-bold text-primary hover:text-destructive">
               Me

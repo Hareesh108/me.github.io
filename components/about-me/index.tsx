@@ -74,10 +74,10 @@ export default function AboutMePage() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 items-center md:items-start mx-4 lg:mx-auto">
-        <h1 className="text-xl md:text-3xl font-bold">Hire me as developer.</h1>
+      <div className="flex flex-col gap-2 items-start mx-4 lg:mx-auto">
+        <h1 className="text-lg md:text-3xl font-bold">Hire me as developer.</h1>
 
-        <p className="text-wrap text-justify w-11/12">
+        <p className="opacity-70">
           With extensive experience in building production ready applications.{" "}
           <br /> I am well equipped to bring your next project to life with
           precision and care. Let’s work together to create something
@@ -85,10 +85,10 @@ export default function AboutMePage() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-2 items-center md:items-start mx-4 lg:mx-auto">
-        <h1 className="text-xl md:text-3xl font-bold">Book a consultation.</h1>
+      <div className="flex flex-col gap-2 mx-4 lg:mx-auto">
+        <h1 className="text-lg md:text-3xl font-bold">Book a consultation.</h1>
 
-        <p className="text-wrap text-justify w-11/12">
+        <p className="opacity-70">
           Looking for guidance on your project? Book a consultation to gain
           valuable insights and clarity for your next steps.{" "}
         </p>

@@ -39,6 +39,7 @@ const Navbar = () => {
   React.useEffect(() => setMounted(true), []);
 
   const isDarkMode = resolvedTheme === "dark" && mounted;
+  const isLightMode = resolvedTheme === "light" && mounted;
 
   const mainLink = [
     {
@@ -128,13 +129,24 @@ const Navbar = () => {
             <ThemeToggle />
             <Sheet>
               <SheetTrigger>
-                <Image
-                  src="/assets/navbar-light.svg"
-                  width={50}
-                  height={50}
-                  alt="navbar logo"
-                  className="hover:cursor-pointer "
-                />
+                {isDarkMode && (
+                  <Image
+                    src="/assets/navbar.svg"
+                    width={50}
+                    height={50}
+                    alt="navbar logo"
+                    className="hover:cursor-pointer"
+                  />
+                )}
+                {isLightMode && (
+                  <Image
+                    src="/assets/navbar-light.svg"
+                    width={50}
+                    height={50}
+                    alt="navbar logo"
+                    className="hover:cursor-pointer "
+                  />
+                )}
               </SheetTrigger>
               <SheetContent>
                 <NavigationMenuList className="gap-4 mt-8 flex flex-col">

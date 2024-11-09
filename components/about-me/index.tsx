@@ -48,8 +48,6 @@ export default function AboutMePage() {
           </svg>
         </div>
 
-        <h1 className="text-4xl font-bold">About Me.</h1>
-
         {/* <h4 className="text-xl text-wrap text-start">
           I am a passionate full-stack developer with expertise in building
           dynamic, responsive applications using modern frameworks and
@@ -60,10 +58,9 @@ export default function AboutMePage() {
           I’m a Software Developer at{" "}
           <a href="https://reldyn.co" target="_black">
             <span className="text-primary hover:text-pink-600 font-bold">
-              RELDYN
+              RELDYN.
             </span>
           </a>
-          {""}.
         </p>
 
         <div className="flex space-x-4 justify-center mt-2 md:mt-0">

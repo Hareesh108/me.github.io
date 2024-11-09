@@ -70,7 +70,7 @@ export default function WorkPage() {
         </div>
 
         <div className="w-full space-y-8 px-4 md:px-0">
-          <div className="grid md:grid-cols-2 gap-6 text-justify">
+          <div className="grid md:grid-cols-2 gap-6 ">
             <div>
               <strong className="underline">
                 Developed and maintained a Back Office Portal for Bank Employees

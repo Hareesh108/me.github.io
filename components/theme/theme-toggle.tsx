@@ -25,7 +25,7 @@ export function ThemeToggle() {
     );
 
   return (
-    <div className="h-10 min-w-12 max-w-12">
+    <div className="h-10 min-w-14 max-w-1min-w-14">
       <Button onClick={handleToggle} variant="link">
         {isDarkMode ? (
           <Moon className="h-10 w-10" />

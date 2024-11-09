@@ -128,7 +128,7 @@ const Navbar = () => {
           <div className="md:hidden flex flex-row">
             <ThemeToggle />
             <Sheet>
-              <SheetTrigger className="mr-8">
+              <SheetTrigger className="mr-4">
                 {isDarkMode && (
                   <Image
                     src="/assets/navbar.svg"
@@ -144,7 +144,7 @@ const Navbar = () => {
                     width={35}
                     height={35}
                     alt="navbar logo"
-                    className="hover:cursor-pointer"
+                    className="hover:cursor-pointer "
                   />
                 )}
               </SheetTrigger>

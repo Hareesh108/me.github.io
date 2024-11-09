@@ -40,8 +40,11 @@ h6 {
   0% {
     background-position: 0% 50%;
   }
+  50% {
+    background-position: 50% 0%;
+  }
   100% {
-    background-position: 100% 50%;
+    background-position: 0% 50%;
   }
 }
 
@@ -51,9 +54,9 @@ h6 {
   inset: 0;
   border-radius: inherit;
   padding: 2px; 
-  background: linear-gradient(90deg, #ff0066, #ff6600, #ffcc00, #66ccff, #ff66cc);
+  background: linear-gradient(45deg,#fdb12c,#ffffff,#EB8317,#ffffff);
   background-size: 300% 300%;
-  animation: gradient-border-animation 13s ease infinite;
+  animation: gradient-border-animation 3s ease infinite;
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);

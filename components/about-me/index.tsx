@@ -22,7 +22,7 @@ export default function AboutMePage() {
   return (
     <div
       id="about-me"
-      className="flex flex-col md:grid md:grid-cols-3 gap-8 items-center md:items-start justify-center  max-w-screen-xl mx-4 xl:mx-auto bg-muted px-6 py-10 md:py-8 rounded-xl"
+      className="flex flex-col md:grid md:grid-cols-3 gap-8 items-center md:items-start justify-center  max-w-screen-xl mx-4 xl:mx-auto bg-muted px-4 py-10 md:py-8 rounded-xl"
     >
       {/* Audio element */}
       <audio ref={audioRef} src="/music/SHAED-ZAYN-Trampoline.mp3" loop />

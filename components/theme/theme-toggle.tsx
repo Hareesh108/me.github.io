@@ -3,7 +3,6 @@
 import * as React from "react";
 import { Moon, Sun, Loader } from "lucide-react";
 import { useTheme } from "next-themes";
-import { Button } from "@/components/ui/button"; // Import Shadcn UI button
 
 export function ThemeToggle() {
   const { setTheme, resolvedTheme } = useTheme();
@@ -25,14 +24,12 @@ export function ThemeToggle() {
     );
 
   return (
-    <div className="h-10 min-w-14 max-w-1min-w-14">
-      <Button onClick={handleToggle} variant="link">
-        {isDarkMode ? (
-          <Moon className="h-10 w-10" />
-        ) : (
-          <Sun className="h-10 w-10" />
-        )}
-      </Button>
-    </div>
+    <button onClick={handleToggle} className="mr-4 md:mr-0 md:pt-2">
+      {isDarkMode ? (
+        <Moon className="h-45 w-45" />
+      ) : (
+        <Sun className="h-45 w-45" />
+      )}
+    </button>
   );
 }

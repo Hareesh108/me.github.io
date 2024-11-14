@@ -28,29 +28,20 @@ export default function LandingPage() {
       )}
       <div className="relative flex justify-center mx-24 sm:mx-32 md:mx-auto">
         <div className="relative">
-          {isDarkMode && (
-            <Image
-              src="/assets/hero-back.svg"
-              alt="Overlay Image"
-              width={500}
-              height={500}
-            />
-          )}
-
-          {isLightMode && (
-            <Image
-              src="/assets/hero-back-light.svg"
-              alt="Overlay Image"
-              width={500}
-              height={500}
-            />
-          )}
+          <Image
+            src="/assets/hero-back.svg"
+            alt="Overlay Image"
+            loading="eager"
+            width={500}
+            height={500}
+          />
 
           <Image
             src="/profile/harsh01.jpg"
             alt="Profile Picture"
             width={500}
             height={500}
+            loading="lazy"
             className="rounded-full border-primary shadow-transparent absolute top-0 left-0"
           />
         </div>

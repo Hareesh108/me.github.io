@@ -34,6 +34,22 @@ body {
           mask-composite: exclude;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  gap: 10px;
+  width: calc(10%);
+  animation: scroll 1s linear infinite; 
+}
+
 
 @layer utilities {
   .text-balance {
@@ -117,3 +133,10 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+/* 1) 10375C blue
+2) EB8317 orange
+3) F4F6FF white
+4) F3C623 yellow */

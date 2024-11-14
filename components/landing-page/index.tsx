@@ -83,7 +83,7 @@ export default function LandingPage() {
           </span>
         </h1>
 
-        <h2 className="text-center md:text-start mt-2">
+        <h2 className="text-2xl text-center md:text-start mt-2">
           Creating a brighter tomorrow with technology and innovation.
         </h2>
 

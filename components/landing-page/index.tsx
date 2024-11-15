@@ -47,7 +47,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2  md:items-start mx-4 lg:mx-auto">
+      <div className="flex flex-col gap-2  md:items-start mx-4 md:mx-auto">
         <h1 className="text-4xl sm:text-6xl z-[50] font-bold text-center md:text-start">
           <span className="relative -z-10">
             Hi! I&apos;m Hareesh.
